@@ -12,16 +12,27 @@ Simple php code to Convert English number to Unicode or Unicode to English
    
    
    
-## Using class   
+##  Using OOP PHP Class Function  
 
-    echo BanglaConverter::bn2en("This is ২০১৬\n");   // output -- This is 2016       
-	echo BanglaConverter::en2bn("42.23 আমার প্রিয় সংখ্যা\n");  // ৪২.২৩ আমার প্রিয় সংখ্যা       
+    echo 'This is an unicode number ১২৩৪৫৬  which convert to english number ' .  NumberConverter::unicode(" ১২৩৪৫৬"). '<br/>';
+    echo 'This is an english number 123456 which convert to unicode number ' .  NumberConverter::english('123456'). '<br/>';    
 	
-## Using class function    
+	
+	Output : 
+	
+	// This is an unicode number ১২৩৪৫৬ which convert to english number 123456    
+    // This is an english number 123456 which convert to unicode number ১২৩৪৫৬     
+	
+	
+## // Using Normal PHP Function    
 
-    echo convert(32412 ); //  output :  ৩২৪১২
+    echo 'This is an unicode number ১২৩৪৫৬  which convert to english number ' .  unicode('১২৩৪৫৬'). '<br/>';    
+    echo 'This is an english number 123456 which convert to unicode number ' .  english('123456'). '<br/>';   
    
-   
+    Output : 
+	
+	// This is an unicode number ১২৩৪৫৬ which convert to english number 123456   
+    // This is an english number 123456 which convert to unicode number ১২৩৪৫৬     
 
 
  Find me on Facebook  : [ My Facebook profile link](https://www.facebook.com/morshed.riyad) \
